@@ -39,8 +39,8 @@ $(function(){
 					speed: 500,
 					fade: true,
 					cssEase: 'linear',
-					prevArrow: $('.slider__arrow--prev'),
-					nextArrow: $('.slider__arrow--next')
+					prevArrow: $('.c-slider__arrow--prev'),
+					nextArrow: $('.c-slider__arrow--next')
 				});	
 			}
 			
