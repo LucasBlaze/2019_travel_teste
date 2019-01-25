@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Travel Company</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700,800|Roboto+Slab:300,400|Roboto:100,300,400,500,700,900" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
@@ -37,37 +39,48 @@
 		<img src="/assets/img/logos/logo_travel.png" class="s-index-header__logo">
 		<nav class="c-nav">
 			<ul class="c-nav__list">
-				<li class="c-nav__list-item">
-					<span>Sobre nós</span>
-				</li>
-				<ul class="c-nav__hidden-list">
-					<li><a href="javascript:;">Item 01</a></li>
-					<li><a href="javascript:;">Item 02</a></li>
-					<li><a href="javascript:;">Item 03</a></li>
-					<li><a href="javascript:;">Item 04</a></li>
-				</ul>
-				<li class="c-nav__list-item">
-					<span>Destinos</span>
-				</li>
-				<ul class="c-nav__hidden-list">
-					<li><a href="javascript:;">Item 01</a></li>
-					<li><a href="javascript:;">Item 02</a></li>
-				</ul>
-				<li class="c-nav__list-item">
-					<span>Acomodações</span>
-				</li>
-				<ul class="c-nav__hidden-list">
-					<li><a href="javascript:;">Item 01</a></li>
-					<li><a href="javascript:;">Item 02</a></li>
-					<li><a href="javascript:;">Item 03</a></li>
-				</ul>
-				<li class="c-nav__list-item">
-					<span>Contato</span>
-				</li>
-				<ul class="c-nav__hidden-list">
-					<li><a href="javascript:;">Item 01</a></li>
-					<li><a href="javascript:;">Item 02</a></li>
-				</ul>
+				<div class="c-nav__item-container">
+					<li class="c-nav__list-item">
+						<span>Sobre nós</span>
+					</li>
+					<ul class="c-nav__hidden-list">
+						<li><a href="javascript:;">Item 01</a></li>
+						<li><a href="javascript:;">Item 02</a></li>
+						<li><a href="javascript:;">Item 03</a></li>
+						<li><a href="javascript:;">Item 04</a></li>
+					</ul>
+				</div>
+
+				<div class="c-nav__item-container">
+					<li class="c-nav__list-item">
+						<span>Destinos</span>
+					</li>
+					<ul class="c-nav__hidden-list">
+						<li><a href="javascript:;">Item 01</a></li>
+						<li><a href="javascript:;">Item 02</a></li>
+					</ul>
+				</div>
+
+				<div class="c-nav__item-container">
+					<li class="c-nav__list-item">
+						<span>Acomodações</span>
+					</li>
+					<ul class="c-nav__hidden-list">
+						<li><a href="javascript:;">Item 01</a></li>
+						<li><a href="javascript:;">Item 02</a></li>
+						<li><a href="javascript:;">Item 03</a></li>
+					</ul>
+				</div>
+
+				<div class="c-nav__item-container">
+					<li class="c-nav__list-item">
+						<span>Contato</span>
+					</li>
+					<ul class="c-nav__hidden-list">
+						<li><a href="javascript:;">Item 01</a></li>
+						<li><a href="javascript:;">Item 02</a></li>
+					</ul>
+				</div>
 			</ul>
 		</nav>
 	</div>
@@ -80,15 +93,15 @@
 				<span class="c-slider__item-txt">Percebemos, cada vez mais, que o novo modelo estrutural aqui preconizado faz parte de um processo de gestão de alternativas às soluções ortodoxas.</span>
 			</li>
 			<li class="c-slider__item" style="background-image: url('/assets/img/slider/banner_01.jpg')">
-				<h1 class="c-slider__item-ttl">Melhores Destinos</h1>
+				<h1 class="c-slider__item-ttl">Piores Destinos</h1>
 				<span class="c-slider__item-txt">Percebemos, cada vez mais, que o novo modelo estrutural aqui preconizado faz parte de um processo de gestão de alternativas às soluções ortodoxas.</span>
 			</li>
 			<li class="c-slider__item" style="background-image: url('/assets/img/slider/banner_01.jpg')">
-				<h1 class="c-slider__item-ttl">Melhores Destinos</h1>
+				<h1 class="c-slider__item-ttl">Destinos maomeno</h1>
 				<span class="c-slider__item-txt">Percebemos, cada vez mais, que o novo modelo estrutural aqui preconizado faz parte de um processo de gestão de alternativas às soluções ortodoxas.</span>
 			</li>
 			<li class="c-slider__item" style="background-image: url('/assets/img/slider/banner_01.jpg')">
-				<h1 class="c-slider__item-ttl">Melhores Destinos</h1>
+				<h1 class="c-slider__item-ttl">Sr. Destino</h1>
 				<span class="c-slider__item-txt">Percebemos, cada vez mais, que o novo modelo estrutural aqui preconizado faz parte de um processo de gestão de alternativas às soluções ortodoxas.</span>
 			</li>
 		</ul>
@@ -98,7 +111,7 @@
 </section>
 	<section class="s-lookingfor">
 	<div class="o-wrapper">
-		<h1 class="c-content-ttl c-content-ttl--color-blue">O que você procura?</h1>
+		<h1 class="c-content-ttl c-content-ttl--line-blue">O que você procura?</h1>
 		<ul class="c-list-circle">
 			<li class="c-list-circle__item">
 				<div class="c-list-circle__img-wrapper">
@@ -128,43 +141,48 @@
 
 <section class="s-accommodations">
 	<div class="o-wrapper">
-		<h1 class="c-content-ttl c-content-ttl--color-green">Sobre as nossas acomodações</h1>
+		<h1 class="c-content-ttl c-content-ttl--line-green">Sobre as nossas acomodações</h1>
 		<ul class="c-list-about">
 			<li class="c-list-about__item">
 				<h3 class="c-list-about__item-ttl">Sobre o apartamento</h3>
 				<p>O que temos que ter sempre em mente é que a determinação clara de objetivos cumpre um papel essencial na formulação do sistema de participação geral. Percebemos, cada vez mais, que a consulta aos diversos militantes promove a alavancagem das novas proposições.</p>
-				<a href="javascript:;" class="c-btn c-btn--color-green c-btn--align-center">Saber Mais</a>
+				<a href="javascript:;" class="c-btn c-btn--color-green">Saber Mais</a>
 			</li>
 			<li class="c-list-about__item">
 				<h3 class="c-list-about__item-ttl">Sobre a casa</h3>
 				<p>As experiências acumuladas demonstram que a execução dos pontos do programa ainda não demonstrou convincentemente que vai participar na mudança das formas de ação. Desta maneira, a consulta aos diversos militantes promove a alavancagem de todos os recursos funcionais envolvidos. </p>
-				<a href="javascript:;" class="c-btn c-btn--color-green c-btn--align-center">Saber Mais</a>
+				<a href="javascript:;" class="c-btn c-btn--color-green">Saber Mais</a>
 			</li>
 		</ul>
 	</div>
 </section>
 	<section class="s-contact">
 	<div class="o-wrapper">
-		<h1>Ficou Interessado</h1>
-		<h2>Preencha o formulário e entre em contato conosco!</h2>
+		<h1 class="c-form-ttl">Ficou Interessado</h1>
+		<span class="c-form-sbttl">Preencha o formulário e entre em contato conosco!</span>
 
-		<form action="javascript:;">
+		<form action="javascript:;" class="s-contact__form">
 			
-			<label for="name">Nome: 
-				<input type="text" name="name" id="name">
+			<label for="name">
+				<span class="s-contact__label-text">Nome: </span>
+				<span class="s-contact__label-input"><input type="text" name="name" id="name"></span>
 			</label>
 
-			<label for="email">Email: 
-				<input type="email" name="email" id="email">
+			<label for="email">
+				<span class="s-contact__label-text">Email: </span>
+				<span class="s-contact__label-input"><input type="email" name="email" id="email"></span>
 			</label>
 			
-			<label for="phone">Telefone: 
-				<input type="text" name="phone" id="phone">
+			<label for="phone">
+				<span class="s-contact__label-text">Telefone: </span>
+				<span class="s-contact__label-input"><input type="text" name="phone" id="phone"></span>
 			</label>
 
 			<label for="message">Mensagem: 
 				<textarea name="message" id="message"></textarea>
 			</label>
+
+			<span class="msg"></span>
 
 			<input type="submit" value="Enviar" class="c-btn c-btn--color-green c-btn--align-center">
 		</form>
@@ -173,16 +191,18 @@
 	<footer>
 	<div class="o-wrapper">
 		<ul class="c-list-social">
-			<li class="c-list-social__item c-list-social__item--facebook">Facebook</li>
-			<li class="c-list-social__item c-list-social__item--instagram">Instagram</li>
-			<li class="c-list-social__item c-list-social__item--twitter">Twitter</li>
+			<li class="c-list-social__item c-list-social__item--facebook"><a href="javascript:;" title="Facebook" target="_lank">Facebook</a></li>
+			<li class="c-list-social__item c-list-social__item--instagram"><a href="javascript:;" title="Instagram" target="_lank">Instagram</a></li>
+			<li class="c-list-social__item c-list-social__item--twitter"><a href="javascript:;" title="Twitter" target="_lank">Twitter</a></li>
 		</ul>
-		<span class="c-copyright">2016 © Travel Company. Todos os direitos reservados. <a href="javascript:;"><img src="" alt="DZ"></a></span>
+		<span class="c-copyright">2016 © Travel Company. Todos os direitos reservados. <a href="javascript:;" title="DZ Studio" target="_blank"><img src="/assets/img/logos/logo_dz.jpg" alt="DZ Studio"></a></span>
 	</div>
 </footer>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+  
   <script src="assets/js/scripts.js"></script>
 </body>
 </html>

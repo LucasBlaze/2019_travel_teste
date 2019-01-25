@@ -22,20 +22,31 @@ a
 .o-wrapper
 	display block
 	max-width 1024px
-	margin 0 15px
-	+above(1024px)
-		margin 0 auto
+	margin 0 auto
+	padding 0 15px
 	
 	
 .s-index-header
 	background-color #f6f6f7
 	height 75px
 	position relative
+	+above(1024px)
+		height 135px
+	.o-wrapper
+		+above(1024px)
+			height 100%
+			position relative
 	&__logo
 		max-width 90px
 		margin 0 auto
 		display block
 		padding 15px 0
+		+above(1024px)
+			max-width 150px
+			position absolute
+			top 50%
+			transform translateY(-50%)
+			left 0
 	&__menu-icon
 		width 30px
 		height 25px
@@ -45,6 +56,8 @@ a
 		transform rotate(0deg) translateY(-50%)
 		transition .5s ease-in-out
 		cursor pointer
+		+above(1024px)
+			display none
 		span
 			display block
 			position absolute
@@ -86,16 +99,40 @@ a
 	background-color #f6f6f7
 	transition all .3s ease-in-out
 	z-index 100
+	+above(1024px)
+		width auto
+		height auto 
+		border 0
+		left auto
+		right 0
+		top 50%
+		transform translateY(-50%)
 	&.open
 		left 0
+	&__item-container
+		position relative
+		&:hover 
+			.c-nav__list-item
+				+above(1024px)
+					padding 9px 59px 15px 29px
 	&__list
 		display flex
 		flex-direction column
+		+above(1024px)
+			flex-direction row
 		&-item
 			margin 10px 0 0
 			padding 10px 60px 15px 5px
 			border-bottom 1px solid #38c1c8
 			position relative
+			+above(1024px)
+				border 0
+				padding 10px 60px 15px 30px
+				&.open 
+					border-left 1px solid #ebebeb
+					border-right 1px solid #ebebeb
+					border-top 1px solid #ebebeb
+			
 			&:after 
 				content ''
 				background url('../img/icons/blue_arrow.svg') center no-repeat
@@ -118,10 +155,27 @@ a
 		display none
 		background-color #38c1c8
 		box-shadow inset 0 0 10px #9b9b9b
+		&.open
+			display block
+			position absolute
+			left 0
+			top 100%
+			width 100%
+			box-shadow none
+			background-color #f6f6f7
+			border-left 1px solid #ebebeb
+			border-right 1px solid #ebebeb
+			border-bottom 1px solid #ebebeb
+			padding 1em
 		>li
 			padding 7px 0 7px 15px
+			&:hover 
+				a 
+					color #38c1c8
 			a
 				color #eaeaea
+				+above(1024px)
+					color #656565
 
 
 
@@ -131,20 +185,31 @@ a
 
 .c-slider
 	position relative
+	font-family 'Roboto', sans-serif
 	&__item
 		background-repeat no-repeat
 		background-position center
 		background-size cover
 		padding 20px 70px 120px
 		color #fff
+		+above(1024px)
+			height 580px
 		&-ttl
 			text-transform uppercase
 			border 4px solid #fff
 			padding 20px
 			font-size rem(25px)
 			text-align center
-			max-width 600px
+			max-width 450px
 			margin 55px auto 30px
+			font-weight 500
+			+above(1024px)
+				font-size rem(60px)
+				border 5px solid #fff 
+				max-width 645px
+				letter-spacing -2px
+				margin 1.8em auto 30px
+				padding 30px 20px
 		&-txt
 			text-align center
 			display block
@@ -152,6 +217,9 @@ a
 			font-weight 100
 			max-width 420px
 			margin 0 auto
+			+above(1024px)
+				font-size rem(16px)
+				line-height 25px
 	&__arrow
 		position absolute
 		background url('../img/icons/white_arrow.svg') center no-repeat
@@ -163,9 +231,13 @@ a
 		&--prev
 			transform rotateY(0deg) translateY(-50%)
 			left 10px
+			+above(1024px)
+				left 30px
 		&--next
 			transform rotateY(180deg) translateY(-50%)
 			right 10px
+			+above(1024px)
+				right 30px
 
 
 
@@ -185,22 +257,28 @@ a
 		transform rotateZ(-5deg)
 		left -80px
 		transform-origin left
+		+above(1024px)
+			transform rotateZ(-6deg)
 	.o-wrapper
 		position relative
 		z-index 10
 		
 
 .c-content-ttl
+	font-family 'Roboto', sans-serif
+	font-weight bold
 	color #656565
-	font-size 25px
+	font-size rem(25px)
 	text-align center
 	text-transform uppercase
 	position relative
 	margin-bottom 2em
-	&--color-blue
+	+above(1024px)
+		font-size rem(40px)
+	&--line-blue
 		&:after 
 			background-color #38c1c8
-	&--color-green
+	&--line-green
 		&:after 
 			background-color #a8d05f
 	&:after 
@@ -211,15 +289,38 @@ a
 		bottom -20px
 		left 50%
 		transform translateX(-50%)
-	
+
+.c-form
+	&-ttl
+		font-family 'Open Sans', sans-serif
+		text-transform uppercase
+		text-align center
+		font-size rem(28px)
+		margin-bottom 5px
+		color #fff
+		+above(1024px)
+			font-size rem(48px)
+			letter-spacing -1px
+	&-sbttl
+		font-family 'Open Sans', sans-serif
+		text-align center
+		font-size 12px
+		font-weight 100
+		color #fff
+		display block
+		+above(1024px)
+			font-size rem(16px)
 
 
 .c-list-circle
-	padding 0 0 3em
+	font-family 'Roboto', sans-serif
+	padding 0 50px 3em
 	display flex
 	flex-wrap wrap
 	justify-content center
 	text-align center
+	+above(1024px)
+		justify-content space-evenly
 	&__item 
 		max-width 280px
 		margin 2em 0
@@ -254,25 +355,33 @@ a
 
 .s-accommodations
 	background-color #e7e7e0
-	padding 1em 0
-
+	padding 1em 0 5em
+	+above(1024px)
+		padding 1em 0 7em
+	.c-list-about
+		margin-top 4.5em
 
 
 .c-list-about
 	display flex
-	flex-wrap wrap 
+	flex-wrap wrap
+	justify-content space-evenly
+	font-family 'Roboto', sans-serif
 	&__item
 		color #656565
 		position relative
 		margin 0 0 1em
-		padding-bottom 6em
+		padding 0 10px 6em
 		text-align center
+		max-width 470px
 		&-ttl
 			text-transform uppercase
 			font-size rem(22px)
 		p 
 			font-size rem(16px)
 			font-weight 100
+			+above(1024px)
+				text-align justify
 		.c-btn
 			position absolute
 			left 50%
@@ -282,6 +391,11 @@ a
 
 .c-btn
 	color #fff
+	font-family 'Roboto Slab', serif
+	font-weight 300
+	text-transform uppercase
+	font-size rem(12px)
+	letter-spacing 2px
 	&--color-green
 		background-color #a8d05f
 
@@ -309,6 +423,7 @@ a
 	.o-wrapper
 		position relative
 		z-index 10
+		max-width 555px
 		
 
 
@@ -317,6 +432,7 @@ a
 
 form 
 	label
+		font-family 'Roboto', sans-serif
 		display block
 		border 2px solid #fff
 		padding 7px 15px
@@ -324,7 +440,9 @@ form
 		color #fff
 		text-transform uppercase
 		font-size 12px
-		font-weight 100
+		font-weight 300
+		+above(1024px)
+			padding 10px 15px	
 	input[type="text"]
 	input[type="email"]
 	textarea
@@ -334,10 +452,111 @@ form
 		color #34425f
 		text-transform uppercase
 		font-size 12px
-		
+		font-weight 500
 	textarea
 		display block
 		width 100%
 		height 100px
 	
 		
+
+
+
+
+.s-contact
+	padding 0 0 4em
+	&__form
+		margin 2.5em 0 0
+	&__label-text
+		float left
+		line-height 1.3333
+	&__label-input
+		overflow hidden 
+		display block
+		padding 0 0 0 10px
+		input 
+			width 100%
+	.c-btn
+		width 120px
+		height 45px
+		display block
+		margin 0 auto
+		line-height 2.8 
+	.msg 
+		display block
+		margin 15px auto
+		text-align center
+		&.error
+			color red
+		&.success
+			color green
+
+		
+
+footer
+	font-family 'Lato', sans-serif
+	padding 1em 0
+	color #656565
+	font-weight 100
+	+above(1024px)
+		padding 1.6em 0
+	a
+		color #656565
+	.o-wrapper
+		+above(1024px)
+			display flex
+			flex-wrap wrap
+			align-items center
+		
+
+
+.c-list-social
+	display flex
+	justify-content space-around
+	+above(1024px)
+		width 50%
+		justify-content flex-start
+	&__item 
+		position relative
+		padding 0 27px 0
+		&:before 
+			content ''
+			position absolute
+			left 0
+			top 50%
+			transform translateY(-50%)
+			width 20px
+			height 20px
+			background-repeat no-repeat
+			background-size contain
+			background-position center
+		&--facebook
+			&:before
+				background-image url('../img/logos/social_facebook.png')
+		&--instagram
+			&:before
+				background-image url('../img/logos/social_instagram.png')
+		&--twitter
+			&:before
+				background-image url('../img/logos/social_twitter.png')
+		
+
+		
+.c-copyright
+	font-size 12px
+	text-align center
+	display block
+	margin 2em auto 0
+	+above(1024px)
+		width 50%
+		margin 0
+		text-align end
+	img 
+		display inline-block
+		vertical-align middle
+		margin 0 0 0 7px
+		
+
+
+
+

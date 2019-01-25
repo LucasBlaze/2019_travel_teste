@@ -1,25 +1,30 @@
 <section class="s-contact">
 	<div class="o-wrapper">
-		<h1>Ficou Interessado</h1>
-		<h2>Preencha o formulário e entre em contato conosco!</h2>
+		<h1 class="c-form-ttl">Ficou Interessado</h1>
+		<span class="c-form-sbttl">Preencha o formulário e entre em contato conosco!</span>
 
-		<form action="javascript:;">
+		<form action="javascript:;" class="s-contact__form">
 			
-			<label for="name">Nome: 
-				<input type="text" name="name" id="name">
+			<label for="name">
+				<span class="s-contact__label-text">Nome: </span>
+				<span class="s-contact__label-input"><input type="text" name="name" id="name"></span>
 			</label>
 
-			<label for="email">Email: 
-				<input type="email" name="email" id="email">
+			<label for="email">
+				<span class="s-contact__label-text">Email: </span>
+				<span class="s-contact__label-input"><input type="email" name="email" id="email"></span>
 			</label>
 			
-			<label for="phone">Telefone: 
-				<input type="text" name="phone" id="phone">
+			<label for="phone">
+				<span class="s-contact__label-text">Telefone: </span>
+				<span class="s-contact__label-input"><input type="text" name="phone" id="phone"></span>
 			</label>
 
 			<label for="message">Mensagem: 
 				<textarea name="message" id="message"></textarea>
 			</label>
+
+			<span class="msg"></span>
 
 			<input type="submit" value="Enviar" class="c-btn c-btn--color-green c-btn--align-center">
 		</form>
