@@ -3,8 +3,7 @@
   npm
 
 ## Iniciando
-	npm i -g gulp
-	npm i
+	npm install
 
 ## Utilizando
 	$ gulp  //Inicia o projeto para desenvolvimento
